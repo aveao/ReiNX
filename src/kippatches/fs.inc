@@ -122,6 +122,11 @@ static kipdiff_t fs_diffs_500_nogc[3] = {
   { 0, 0, NULL, NULL },
 };
 
+static kipdiff_t fs_diffs_500_npdm[2] = {
+  { 0x22D68, 4, "\x9A\xE3\xFF\x97", "\x1F\x20\x03\xD5" },
+  { 0, 0, NULL, NULL },
+};
+
 static kipdiff_t fs_diffs_510_nosigchk[3] = {
   { 0x22E0C, 4, "\x85\x3E\x00\x94", "\xE0\x03\x1F\x2A" },
   { 0x7D860, 4, "\x40\x03\x00\x36", "\x1F\x20\x03\xD5" },
@@ -200,6 +205,7 @@ static kippatch_t fs_kip_patches_500[] = {
   { "nosigchk", fs_diffs_500_nosigchk },
   { "nocmac", fs_diffs_500_nocmac },
   { "nogc", fs_diffs_500_nogc },
+  { "npdm", fs_diffs_500_npdm },
   { NULL, NULL }
 };
 
